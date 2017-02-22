@@ -19,12 +19,15 @@
           {% endfor %}
         </div>
 
+        {{ site.url }}
+        {{ site.baseurl }}
+
       </div>
     </main>
 
     {% include footer.html %}
 
-    <script type="text/javascript" src="{{ site.github.url }}/assets/test.js"></script>
+    <script type="text/javascript" src="{{ '/assets/test.js' | relative_url }}"></script>
 
   </body>
 
